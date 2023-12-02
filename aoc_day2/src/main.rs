@@ -104,11 +104,11 @@ fn driver_pt2(m: String) -> u64 {
         if v.color == "END" || v.color == "game" {
             continue;
         } else if v.color == "blue" {
-            max[0] = if v.quan > max[0] { v.quan } else { max[0] };
+            max[0] = max[0].max(v.quan);
         } else if v.color == "green" {
-            max[1] = if v.quan > max[1] { v.quan } else { max[1] };
+            max[1] = max[1].max(v.quan);
         } else if v.color == "red" {
-            max[2] = if v.quan > max[2] { v.quan } else { max[2] };
+            max[2] = max[2].max(v.quan);
         }
     }
     let mut result: u64 = 1;
