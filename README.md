@@ -1,2 +1,2 @@
 # AOC_2023
-Advent of Code 2023 in Rust
+Advent of Code 2023 in Rust and Python
